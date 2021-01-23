@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Анна Кирова](https://up.htmlacademy.ru/htmlcss/30/user/1591621).
-* Наставник: `Неизвестно`.
+* Наставник: [Кристина Новикова] (https://htmlacademy.ru/profile/stina).
 
 ---
 
