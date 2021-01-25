@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс (Каталог)</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <a href="#">Корзина</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+      <section>
+        <h2> Фильтр товаров</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Стоимость:</legend>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="adaptive-net" value="adaptive-net" id="adaptive-net" checked>
+                  <label for="adaptive-net">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="fix-net" value="fix-net" id="fix-net">
+                  <label for="fix-net">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="rubber-net" value="rubber-net" id="rubber-net">
+                  <label for="rubber-net">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="filter-slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="filter-basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h2>Список шаблонов</h2>
+        <ul>
+          <li>
+            <img src="https://via.placeholder.com/150x100" width="358" height="578" alt="">
+            <a>Sedona</a>
+            <button type="button">9 900</button>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" width="358" height="578" alt="">
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" width="358" height="578" alt="">
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" width="358" height="578" alt="">
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" width="358" height="578" alt="">
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" width="358" height="578" alt="">
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a>1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="">
+      <div>
+        <p>NЁRDS DESIGN STUDIO</p>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <button>Напишите нам</button>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграмм</a>
+          </li>
+        </ul>
+        <p>Давайте дружить, это выгодно! Скидка 10% для друзей из социальных сетей. </p>
+      </div>
+    </footer>
+  </body>
+</html>
