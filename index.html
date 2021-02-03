@@ -1,97 +1,107 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="fi32.ico">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="css//style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
         <div>
-          <ul>
-            <li>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
               <a href="#">Студия</a>
             </li>
-            <li>
+            <li class="site-list__item">
               <a href="#">Клиенты</a>
             </li>
-            <li>
+            <li class="site-list__item">
               <a href="catalog.html">Магазин</a>
             </li>
-            <li>
+            <li class="site-list__item">
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <a href="#">Корзина</a>
+          <a class="user-cart" href="#">Корзина</a>
         </div>
       </nav>
     </header>
-    <main>
-      <h1>Дизайн-студия "Нердс"</h1>
+    <main class="page-main">
+      <h1 class="visually-hidden">Дизайн-студия "Нердс"</h1>
       <section>
         <h2>slider</h2>
         <a href="#">Узнать больше</a>
       </section>
-      <section>
-        <h2>Продукты</h2>
-        <div>
-          <img src="img//product-1.png" width="300" height="146" alt="Продукт-1">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <button>Заказать</button>
-        </div>
-        <div>
-          <img src="img//product-2.png" width="300" height="146" alt="Продукт-2">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button>Заказать</button>
-        </div>
-        <div>
-          <img src="img//product-3.png" width="300" height="146" alt="Продукт-3">
-          <h3>Презентации</h3>
-          <p>Вы дыже не подозреваете, насколько вы изумительны!</p>
-          <button>Заказать</button>
-        </div>
+      <section class="products">
+        <h2 class="visually-hidden">Продукты</h2>
+        <ul class="products__list">
+          <li class="products__item">
+            <div>
+              <img src="img//product-1.png" width="300" height="146" alt="Продукт-1">
+              <h3 class="products__title">Веб-сайты</h3>
+              <p class="products__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="products__buttons products__button1">Заказать</button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div>
+              <img src="img//product-2.png" width="300" height="146" alt="Продукт-2">
+              <h3 class="products__title">Приложения</h3>
+              <p class="products__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="products__buttons products__button2">Заказать</button>
+            </div>
+          </li>
+          <li class="products__item">
+            <div>
+              <img src="img//product-3.png" width="300" height="146" alt="Продукт-3">
+              <h3 class="products__title">Презентации</h3>
+              <p class="products__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="products__buttons products__button3">Заказать</button>
+            </div>
+          </li>
+        </ul>
       </section>
-      <section>
-        <h2>О компании</h2>
-        <p> Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>
+      <section class="about-company">
+        <h2 class="visually-hidden">О компании</h2>
+        <p class="about-company__slogan"> Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-company__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3 class="about-company__title">Выполняем заказы на разработку:</h3>
+        <ul class="about-company__list">
+          <li class="about-company__item">
             Веб-сайтов любой сложности
           </li>
-          <li>
+          <li class="about-company__item">
             Мобильных приложений для iOS и Android
           </li>
-          <li>
+          <li class="about-company__item">
             Слайдшоу и видео для корпоративных презентаций
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Статистика</h2>>
+      <section class="stats">
+        <h2 class="visually-hidden">Статистика</h2>
         <img src="img/nerds-illustration.png" width="360" height="208" alt="NЁRDS">
-        <p>C 2004 года любим точность во всем:</p>
-         <table>
+        <p class="stats__slogan">C 2004 года любим точность во всем:</p>
+         <table class="stats__table">
            <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
+            <td class="stats__number">146<sup>%</sup></td>
+            <td class="stats__number">100<sup>%</sup></td>
+            <td class="stats__number">50<sup>%</sup></td>
            </tr>
            <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+            <td class="stats__text">Уровень самоотдачи</td>
+            <td class="stats__text">Соблюдение сроков</td>
+            <td class="stats__text">Минимальная предоплата</td>
            </tr>
          </table>
       </section>
-      <section>
-        <h2>Партнеры</h2>
-        <ul>
+      <section class="partners">
+        <h2 class="visually-hidden">Партнеры</h2>
+        <ul class="partners__list">
           <li></li>
           <li></li>
           <li></li>
@@ -99,27 +109,28 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="">
-      <div>
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button>Напишите нам</button>
+      <div class="page-footer__contacts">
+        <p class="page-footer__slogan">NЁRDS DESIGN STUDIO</p>
+        <p class="page-footer__contact">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="page-footer__contact" href="tel:78122757575">тел. +7 (812) 275-75-75</a>
+        <button class="page-footer__button" >Напишите нам</button>
       </div>
-      <div>
-        <ul>
-          <li>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
             <a href="#">Вконтакте</a>
           </li>
-          <li>
+          <li class="social__item">
             <a href="#">Фейсбук</a>
           </li>
-          <li>
+          <li class="social__item">
             <a href="#">Инстаграмм</a>
           </li>
         </ul>
-        <p>Давайте дружить, это выгодно! Скидка 10% для друзей из социальных сетей. </p>
+        <p class="social__slogan">Давайте дружить, это выгодно!</p>
+        <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
   </body>

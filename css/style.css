@@ -1,0 +1,161 @@
+:root {
+  --black: #000000;
+  --basic-text: #283136;
+  --white: #ffffff;
+  --button-red: #FB565A;
+  --button-green: #00CA74;
+  --button-yellow: #EFC849;
+  --footer-address: #666666;
+  --social-text: #444444;
+}
+
+.page-body {
+  font-family: "Roboto", "Arial", sans-serif;
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: "Roboto Bold", "Arial", sans-serif;
+}
+
+.page-main {
+  color: var(--basic-text);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.products__list {
+  list-style: none;
+}
+
+.products__title {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.products__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.products__buttons {
+  width: 160px;
+  height: 50px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 17px 40px 15px 39px;
+  border: none;
+  border-radius: 3px;
+}
+
+.products__button1 {
+  background-color: var(--button-red);
+}
+
+.products__button2 {
+  background-color: var(--button-green);
+}
+
+.products__button3 {
+  background-color: var(--button-yellow);
+}
+
+.about-company__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.about-company__title {
+  text-transform: uppercase;
+}
+
+.about-company__list {
+  list-style: none;
+}
+
+.stats__slogan {
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.stats__number {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.stats__table sup {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.stats__text {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.partners__list {
+  list-style: none;
+}
+
+.page-footer__slogan {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.page-footer__contact {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--footer-address);
+}
+
+.page-footer__contact a {
+  text-decoration: none;
+  color: var(--footer-address);
+}
+
+.page-footer__button {
+  width: 219px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 17px 44px 15px 44px;
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  background-color: var(--button-red);
+}
+
+.social__slogan {
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.social__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--social-text);
+}
