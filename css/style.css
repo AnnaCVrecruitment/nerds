@@ -62,15 +62,15 @@ img {
   border-radius: 3px;
 }
 
-.products__button1 {
+.products__button--red {
   background-color: var(--button-red);
 }
 
-.products__button2 {
+.products__button--green {
   background-color: var(--button-green);
 }
 
-.products__button3 {
+.products__button--yellow {
   background-color: var(--button-yellow);
 }
 
