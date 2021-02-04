@@ -77,6 +77,8 @@ img {
 
 .products__list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .products__title {
@@ -256,4 +258,14 @@ img {
   background-color: var(--filter);
   font-size: 16px;
   line-height: 18px;
+}
+
+.grid-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
