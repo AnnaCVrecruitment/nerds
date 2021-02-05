@@ -36,7 +36,6 @@
   --social-text: #444444;
   --filter: #EEEEEE;
 }
-
 .page__body {
   font-family: "Roboto", "Arial", sans-serif;
   min-width: 960px;
@@ -269,3 +268,11 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.catalog-grid-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
