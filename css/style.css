@@ -38,7 +38,7 @@
 }
 .page__body {
   font-family: "Roboto", "Arial", sans-serif;
-  min-width: 960px;
+  min-width: 1158px;
   margin: 0;
   padding: 0;
 }
@@ -54,6 +54,19 @@ img {
 
 .title {
   font-family: "Roboto Bold", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-main {
@@ -74,7 +87,61 @@ img {
   line-height: 55px;
 }
 
+.page-header {
+  background-color: var(--filter);
+}
+
+.nav-cont {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.main-nav a {
+  padding: 5px 20px;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.user-cart {
+  width: 300px;
+  padding:0;
+}
+
+.products {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+}
 .products__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -130,6 +197,11 @@ img {
   list-style: none;
 }
 
+.stats {
+  padding: 0;
+  margin: 0;
+}
+
 .stats__slogan {
   color: var(--black);
   text-transform: uppercase;
@@ -155,6 +227,11 @@ img {
 
 .partners__list {
   list-style: none;
+}
+
+.page-footer__social {
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .page-footer__slogan {
@@ -201,6 +278,13 @@ img {
   color: var(--social-text);
 }
 
+.social__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+}
+
 .filter__title {
   font-size: 18px;
   line-height: 30px;
@@ -235,6 +319,7 @@ img {
 }
 .sort__list {
   list-style: none;
+  justify-content: space-between;
 }
 
 .sort__item {
@@ -262,6 +347,9 @@ img {
 .grid-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social {
@@ -274,5 +362,12 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
+.about-company {
+  width: 1158px;
+  margin: 0 auto;
+}
 
-
+.partners {
+  width: 1158px;
+  margin: 0 auto;
+}
