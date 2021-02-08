@@ -134,11 +134,25 @@ img {
   padding:0;
 }
 
+.slider {
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.grid-cont {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .products {
   width: 1158px;
   margin: 0 auto;
   padding: 0;
 }
+
 .products__list {
   padding: 0;
   margin: 0;
@@ -195,11 +209,6 @@ img {
 
 .about-company__list {
   list-style: none;
-}
-
-.stats {
-  padding: 0;
-  margin: 0;
 }
 
 .stats__slogan {
@@ -282,7 +291,6 @@ img {
   list-style: none;
   display: flex;
   flex-direction: row;
-
 }
 
 .filter__title {
@@ -344,14 +352,6 @@ img {
   line-height: 18px;
 }
 
-.grid-cont {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .social {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -360,11 +360,6 @@ img {
 .catalog-grid-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.about-company {
-  width: 1158px;
-  margin: 0 auto;
 }
 
 .partners {
