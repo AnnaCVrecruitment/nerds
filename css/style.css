@@ -92,19 +92,12 @@ img {
 }
 
 .nav-cont {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-.main-nav__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
 }
 
 .site-list {
@@ -112,14 +105,16 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: flex-start;
-  width: auto;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 737px;
 }
 
 .main-nav a {
-  padding: 5px 20px;
+  padding: 5px 10px;
   display: block;
   font-size: 16px;
   line-height: 30px;
@@ -130,7 +125,7 @@ img {
 }
 
 .user-cart {
-  width: 300px;
+  width: 100px;
   padding:0;
 }
 
