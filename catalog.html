@@ -10,131 +10,135 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">Студия</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Клиенты</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Магазин</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-          <a class="user-cart" href="#">Корзина</a>
-        </div>
-      </nav>
+      <div class="nav-cont">
+        <img src="https://via.placeholder.com/150x100" width="160" height="65" alt="logo">
+        <nav class="main-nav">
+          <div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="#">Студия</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Магазин</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a class="user-cart" href="#">Корзина</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main-catalog">
       <h1 class="page-main__title">Магазин готовых шаблонов</h1>
       <h2 class="visually-hidden"> Фильтр товаров</h2>
       <div class="catalog-grid-cont">
-
-      <aside class="filter">
-        <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Стоимость:</legend>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Сетка:</legend>
-            <ul class="filter__radio-list">
-              <li class="filter__radio-item">
-                <input type="radio" name="adaptive-net" value="adaptive-net" id="adaptive-net" checked>
-                <label for="adaptive-net">Адаптивная</label>
+        <aside class="filter">
+          <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Стоимость:</legend>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Сетка:</legend>
+              <ul class="filter__radio-list">
+                <li class="filter__radio-item">
+                  <input type="radio" name="adaptive-net" value="adaptive-net" id="adaptive-net" checked>
+                  <label for="adaptive-net">Адаптивная</label>
+                </li>
+                <li class="filter__radio-item">
+                  <input type="radio" name="fix-net" value="fix-net" id="fix-net">
+                  <label for="fix-net">Фиксированная</label>
+                </li>
+                <li class="filter__radio-item">
+                  <input type="radio" name="rubber-net" value="rubber-net" id="rubber-net">
+                  <label for="rubber-net">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Особенности:</legend>
+              <ul class="filter__checkbox-list">
+                <li class="filter__checkbox-item">
+                  <input type="checkbox" name="filter-slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input type="checkbox" name="filter-advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input type="checkbox" name="filter-news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input type="checkbox" name="filter-gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input type="checkbox" name="filter-basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter__button" type="submit">Показать</button>
+          </form>
+        </aside>
+        <div>
+          <section class="sort">
+            <h2 class="visually-hidden">Сортировка</h2>
+            <h3 class="filter__title">Сортировать:</h3>
+            <ul class="sort__list">
+              <li class="sort__item">по цене</li>
+              <li class="sort__item">по типу</li>
+              <li class="sort__item">по названию</li>
+            </ul>
+          </section>
+          <section class="template">
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <ul class="template__list">
+              <li class="template__item">
+                <img src="img//img-catalog/img-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
+                <a>Sedona</a>
+                <button type="button">9 900</button>
               </li>
-              <li class="filter__radio-item">
-                <input type="radio" name="fix-net" value="fix-net" id="fix-net">
-                <label for="fix-net">Фиксированная</label>
+              <li class="template__item">
+                <img src="img//img-catalog/img-pink.jpg" width="358" height="578" alt="Шаблон Pink">
               </li>
-              <li class="filter__radio-item">
-                <input type="radio" name="rubber-net" value="rubber-net" id="rubber-net">
-                <label for="rubber-net">Резиновая</label>
+              <li class="template__item">
+                <img src="img//img-catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop">
+              </li>
+              <li class="template__item">
+                <img src="img//img-catalog/img-mishka.jpg" width="358" height="578" alt="Шаблон Mishka">
+              </li>
+              <li class="template__item">
+                <img src="img//img-catalog/img-aplus.jpg" width="358" height="578" alt="Шаблон Aplus">
+              </li>
+              <li class="template__item">
+                <img src="img//img-catalog/img-kvast.jpg" width="358" height="578" alt="Шаблон Kvast">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Особенности:</legend>
-                <ul class="filter__checkbox-list">
-              <li class="filter__checkbox-item">
-                <input type="checkbox" name="filter-slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
-              </li>
-              <li class="filter__checkbox-item">
-                <input type="checkbox" name="filter-advantages" id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
-              </li>
-              <li class="filter__checkbox-item">
-                <input type="checkbox" name="filter-news" id="filter-news" checked>
-                <label for="filter-news">Новости</label>
-              </li>
-              <li class="filter__checkbox-item">
-                <input type="checkbox" name="filter-gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li class="filter__checkbox-item">
-                <input type="checkbox" name="filter-basket" id="filter-basket">
-                <label for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="filter__button" type="submit">Показать</button>
-        </form>
-      </aside>
-      <div>
-      <section class="sort">
-        <h2 class="visually-hidden">Сортировка</h2>
-        <h3 class="filter__title">Сортировать:</h3>
-        <ul class="sort__list">
-          <li class="sort__item">по цене</li>
-          <li class="sort__item">по типу</li>
-          <li class="sort__item">по названию</li>
-        </ul>
-      </section>
-      <section class="template">
-        <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul class="template__list">
-          <li class="template__item">
-            <img src="img//img-catalog/img-sedona.jpg" width="358" height="578" alt="Шаблон Sedona">
-            <a>Sedona</a>
-            <button type="button">9 900</button>
-          </li>
-          <li class="template__item">
-            <img src="img//img-catalog/img-pink.jpg" width="358" height="578" alt="Шаблон Pink">
-          </li>
-          <li class="template__item">
-            <img src="img//img-catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop">
-          </li>
-          <li class="template__item">
-            <img src="img//img-catalog/img-mishka.jpg" width="358" height="578" alt="Шаблон Mishka">
-          </li>
-          <li class="template__item">
-            <img src="img//img-catalog/img-aplus.jpg" width="358" height="578" alt="Шаблон Aplus">
-          </li>
-          <li class="template__item">
-            <img src="img//img-catalog/img-kvast.jpg" width="358" height="578" alt="Шаблон Kvast">
-          </li>
-        </ul>
-        </div>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">
-            <a>1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">Следующая</a>
-          </li>
-        </ul>
-      </section>
+          </div>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current">
+              <a>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">Следующая</a>
+            </li>
+          </ul>
+        </section>
       </div>
     </main>
     <footer class="page-footer">

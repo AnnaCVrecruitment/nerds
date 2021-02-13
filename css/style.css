@@ -79,12 +79,16 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-text);
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .page-main__title {
   color: var(--black);
   font-size: 55px;
   line-height: 55px;
+  background-color: var(--filter);
+  text-align: center;
 }
 
 .page-header {
@@ -325,23 +329,40 @@ img {
 .filter__fieldset {
   border: none;
 }
+
 .sort__list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 272px;
 }
 
 .sort__item {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  display: block;
 }
 
 .template__list {
+  margin: 0;
+  padding: 0 auto;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 757px;
 }
 
 .pagination-list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pagination-item a {
@@ -359,7 +380,8 @@ img {
 
 .catalog-grid-cont {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content 1fr;
+  margin: 0 auto;
 }
 
 .partners {
