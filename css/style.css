@@ -195,10 +195,6 @@ img {
   background-position: 0 0;
 }
 
-
-
-
-
 .slider {
   width: 1158px;
   margin: 0 auto;
@@ -363,6 +359,8 @@ img {
   flex-direction: row;
 }
 
+/*Каталог*/
+
 .filter__title {
   font-size: 18px;
   line-height: 30px;
@@ -396,13 +394,23 @@ img {
   border: none;
 }
 
+.sort {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 672px;
+  align-content: flex-start;
+}
+
 .sort__list {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 272px;
+  padding-left: 266px;
+  align-content: flex-start;
 }
 
 .sort__item {
@@ -410,6 +418,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   display: block;
+  padding-right: 25px;
 }
 
 .template__list {
@@ -429,6 +438,8 @@ img {
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
+  width: 336px;
 }
 
 .pagination-item a {
