@@ -160,6 +160,7 @@ img {
   width: 100%;
   padding-top: 75px;
 }
+
 /* User navigation */
 
 .user-navigation {
@@ -180,28 +181,97 @@ img {
   background-color: var(--basic-extra-dark);
 }
 
-.user-navigation .user-cart {
-  padding-left: 25px;
-  position: relative;
-}
-
-.login-link::before {
+.user-cart::before {
   content: "";
   position: absolute;
+  top: 27px;
+  left: 24px;
   width: 15px;
   height: 15px;
-  background-image: url("img/ner");
+  background-image: url("img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.user-navigation .user-cart {
+  padding-left: 50px;
+  position: relative;
+}
 
-
-
+/*slider*/
 
 .slider {
+  background-color: var(--filter);
+}
+
+.slider__wrapper {
   width: 1158px;
   margin: 0 auto;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+.slide-title {
+  width: 538px;
+  margin: 0;
+  padding-top: 78px;
+  padding-bottom: 10px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slide-text {
+  padding-bottom: 35px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: 57px;
+  justify-content: space-between;
+}
+
+.slider-controls .button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  background-color:  var(--white);
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--button-red);
+  border-radius: 3px;
+  border: none;
+  width: 240px;
+  height: 50px;
+  padding: 16px 54px;
 }
 
 .grid-cont {
