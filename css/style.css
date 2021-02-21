@@ -247,7 +247,7 @@ img {
   justify-content: space-between;
 }
 
-.slider-controls .button {
+.slider-controls button {
   padding: 0;
   width: 18px;
   height: 18px;
