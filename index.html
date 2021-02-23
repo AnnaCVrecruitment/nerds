@@ -84,9 +84,6 @@
           </div>
         </div>
       </section>
-
-      <div class="first-line">
-
       <section class="products">
         <h2 class="visually-hidden">Продукты</h2>
         <ul class="products__list">
@@ -152,14 +149,11 @@
           </table>
         </section>
       </div>
-
-      </div>
-
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="partners__list">
-          <li>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <li class="partners__item">
+            <a class="partners__logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
               <svg width="199" height="68" viewBox="0 0 199 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.2">
                 <path d="M82.1427 49.4881C82.4919 49.4881 82.8412 49.3834 83.1555 49.3135V51.7582C82.5269 52.0027 81.7585 52.1424 80.9902 52.1424C79.5932 52.1424 78.4756 51.5836 77.9168 50.3612C76.4151 51.5836 74.5291 52.3519 72.1193 52.3519C69.3254 52.3519 66.741 50.8153 66.741 47.6371C66.741 43.6907 70.3731 42.5032 73.5862 42.5032C74.9133 42.5032 76.3801 42.6778 77.5676 42.9572V42.3985C77.5676 40.4776 76.1706 39.1505 73.5513 39.1505C71.2812 39.1505 69.3952 39.7093 68.0332 40.3379V37.1947C69.2555 36.7756 71.4558 36.1819 73.9005 36.1819C78.2311 36.1819 80.9902 38.2424 80.9902 42.8874V48.3705C81.0251 49.2087 81.514 49.4881 82.1427 49.4881ZM70.2683 47.3927C70.2683 48.8944 71.5955 49.6628 73.1322 49.6628C74.7736 49.6628 76.3452 49.069 77.5676 47.8467V45.2623C76.6246 45.0876 75.3324 44.8781 74.2497 44.8781C72.3289 44.8781 70.2683 45.4718 70.2683 47.3927Z" fill="black"/>
@@ -175,26 +169,34 @@
                 <path d="M134.424 2.6543H131.002V25.0409H134.424V2.6543Z" fill="black"/>
                 <path d="M27.0665 0.0349245L26.7871 0L0 2.79396V51.8979L26.7871 67.8234L53.5742 51.8979V2.79396L27.0665 0.0349245ZM50.0818 49.9072L26.7871 63.7722L3.49245 49.9072V29.7906L26.6823 43.5858L26.7173 46.1004L10.8266 36.6358L10.7917 39.0806L26.7522 48.6848L26.7871 51.2343L10.8266 41.6999L10.7917 44.1446L26.7522 53.7489L42.8873 44.1097V41.665H42.8524V40.8268V39.814V33.7371L50.0469 29.4414V49.9072H50.0818ZM50.0469 26.822L43.6906 30.559L40.7569 32.3052L26.7173 23.9932L26.6823 26.4379L38.6615 33.5276L38.5567 33.5974L38.3122 33.7371L36.6009 34.7499L26.7173 28.8826L26.6823 31.3273L34.5054 35.9723L32.6544 37.1946L32.6195 37.2296L26.7173 33.7371L26.6823 36.1818L30.559 38.4519L26.6125 40.8268L3.5623 27.1014L26.6474 13.2015L50.0469 26.822ZM50.0818 24.4123L26.6823 10.6171L3.49245 24.3773V5.9721L26.7871 3.52738L50.0818 5.9721V24.4123Z" fill="black"/>
                 </g>
-                </svg>
+              </svg>
             </a>
           </li>
-          <li>
-            <a>
-
+          <li class="partners__item">
+            <a class="partners__logo-barbershop">
+              <img src="img/logo-barbershop.svg" width="209" height="90" alt="logo-barbershop">
             </a>
           </li>
-          <li></li>
-          <li></li>
+          <li class="partners__item">
+            <a class="partners__logo-pink">
+              <img src="img/logo-pink.svg" width="182" height="52" alt="logo-pink">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__logo-mishka">
+              <img src="img/logo-mishka.svg" width="173" height="84" alt="logo-mishka">
+            </a>
+          </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
-      <img src="https://via.placeholder.com/150x100" width="150" height="100" alt="">
+      <img class="page-footer__map" src="img/map.jpg" width="1158" height="416" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
       <div class="page-footer__contacts">
         <p class="page-footer__slogan">NЁRDS DESIGN STUDIO</p>
-        <p class="page-footer__contact">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="page-footer__contact">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
         <a class="page-footer__contact" href="tel:78122757575">тел. +7 (812) 275-75-75</a>
-        <button class="page-footer__button" >Напишите нам</button>
+        <button class="page-footer__button">Напишите нам</button>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -223,11 +225,35 @@
             </a>
           </li>
         </ul>
-        <div class="social__grid">
+        <div class="social__flex">
           <p class="social__slogan">Давайте дружить, это выгодно!</p>
           <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-form">
+      <h2 class="modal-form__title">Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-form__grid">
+          <p class="modal-form__flex">
+            <label for="feedback-form__name">Ваше имя:</label>
+            <input id="feedback-form__name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-form__flex">
+            <label for="feedback-form__mail">Ваш email:</label>
+            <input id="feedback-form__mail" type="email" name="mail" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="modal-form__flex-textarea">
+          <label for="feedback-form__review">Текст письма:</label>
+          <textarea name="review" id="feedback-form__name" rows="10">
+            В свободной форме
+          </textarea>
+        </p>
+        <input class="feedback-form__button" type="submit" value="Отправить">
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
