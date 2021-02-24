@@ -107,7 +107,7 @@ img {
 
 .page-header {
   background-color: var(--filter);
-  padding-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 .main-logo {
@@ -193,14 +193,14 @@ img {
 
 .user-navigation .user-cart {
   padding-left: 50px;
-  position: relative;
+  position:relative;
 }
 
 .user-cart::before {
   content: "";
   position: absolute;
-  top: 27px;
-  left: 24px;
+  top: 82px;
+  right: 240px;
   width: 15px;
   height: 15px;
   background-image: url("img/cart-icon.svg");
@@ -215,9 +215,15 @@ img {
   background-color: var(--filter);
 }
 
+.slide img {
+  width: 760px;
+  height: 431px;
+}
+
 .slider__wrapper {
   width: 1158px;
   margin: 0 auto;
+  position: relative;
 }
 
 .slider-list {
@@ -232,7 +238,6 @@ img {
 }
 
 .slide-current {
-  padding-top: 30px;
   display: block;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -505,9 +510,22 @@ img {
   padding-right: 0px;
 }
 
-.partners__logo-htmlacademy:focus path,
-.partners__logo-htmlacademy:hover path {
-  fill: var(--black);
+.partners__logo-htmlacademy:focus,
+.partners__logo-htmlacademy:hover {
+ opacity: 1;
+}
+
+.partners__logo-htmlacademy:active {
+  opacity: 0,1;
+}
+
+.partners__logo-barbershop img:hover, 
+.partners__logo-barbershop img:focus {
+  opacity: 1;
+}
+
+.partners__logo-barbershop img:active {
+  opacity: 0,1;
 }
 
 /*Footer*/
@@ -521,15 +539,21 @@ img {
 }
 
 .page-footer__slogan {
+  margin: 0;
+  padding-top: 49px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: var(--black);
+  width: 193px;
+  height: 30px;
+  padding-bottom: 23px;
 }
 
 .page-footer {
   width: 1158px;
   margin: 0 auto;
+  position: relative;
 }
 
 .page-footer__map {
@@ -538,24 +562,38 @@ img {
 
 .page-footer__contacts {
   position: absolute;
-  width: 319px;
-  height: 308px;
+  width: 269px;
+  height: 268px;
   z-index: 20;
+  background-color: var(--white);
+  bottom: 271px;
+  left: 140px;
+  padding-top: 49;
+  padding-left: 50px;
 }
 
 .page-footer__contact {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: var(--footer-address);
+  width: 230px;
+  height: 72px;
 }
 
 .page-footer__contact a {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: var(--footer-address);
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .page-footer__button {
   margin-top: 40px;
+  margin-bottom: 57px;
   text-align: center;
   font-weight: 500;
   width: 219px;
@@ -628,6 +666,8 @@ img {
   padding-left: 0px;
   padding-right: 100px;
 }
+
+
 
 /*Modal*/
 
