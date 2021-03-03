@@ -21,20 +21,20 @@
           <div class="container">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a href="#">Студия</a>
+                <a class="site-navigation-current" href="#">Студия</a>
               </li>
               <li class="site-list__item">
                 <a href="#">Клиенты</a>
               </li>
               <li class="site-list__item">
-                <a href="catalog.html">Магазин</a>
+                <a class="site-navigation-current" href="catalog.html">Магазин</a>
               </li>
               <li class="site-list__item">
                 <a href="#">Контакты</a>
               </li>
             </ul>
             <div class="user-navigation">
-              <a class="user-cart" href="#">Корзина</a>
+              <a class="user-cart site-navigation-current" href="#">Корзина</a>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
                 <p class="slide-text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
                 <a class="button slide-button" href="#">Узнать больше</a>
               </div>
-              <img src="img/nerds-slide1.png" width="760" height="481" alt="Слайд-1">
+              <img src="img/nerds-slide1.png" width="760" height="431" alt="Слайд-1">
             </li>
             <li class="slider-item slide">
               <div class="slider__grid">
@@ -120,7 +120,7 @@
           <p class="about-company__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3 class="about-company__title">Выполняем заказы на разработку:</h3>
           <ul class="about-company__list">
-            <li class="about-company__item">
+            <li class="about-company__item first-line">
               Веб-сайтов любой сложности
             </li>
             <li class="about-company__item">
@@ -152,10 +152,10 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="partners__list">
-          <li class="partners__item">
+          <li class="partners__item first-vertical-line">
             <a class="partners__logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
               <svg width="199" height="68" viewBox="0 0 199 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.2">
+                <g>
                 <path d="M82.1427 49.4881C82.4919 49.4881 82.8412 49.3834 83.1555 49.3135V51.7582C82.5269 52.0027 81.7585 52.1424 80.9902 52.1424C79.5932 52.1424 78.4756 51.5836 77.9168 50.3612C76.4151 51.5836 74.5291 52.3519 72.1193 52.3519C69.3254 52.3519 66.741 50.8153 66.741 47.6371C66.741 43.6907 70.3731 42.5032 73.5862 42.5032C74.9133 42.5032 76.3801 42.6778 77.5676 42.9572V42.3985C77.5676 40.4776 76.1706 39.1505 73.5513 39.1505C71.2812 39.1505 69.3952 39.7093 68.0332 40.3379V37.1947C69.2555 36.7756 71.4558 36.1819 73.9005 36.1819C78.2311 36.1819 80.9902 38.2424 80.9902 42.8874V48.3705C81.0251 49.2087 81.514 49.4881 82.1427 49.4881ZM70.2683 47.3927C70.2683 48.8944 71.5955 49.6628 73.1322 49.6628C74.7736 49.6628 76.3452 49.069 77.5676 47.8467V45.2623C76.6246 45.0876 75.3324 44.8781 74.2497 44.8781C72.3289 44.8781 70.2683 45.4718 70.2683 47.3927Z" fill="black"/>
                 <path d="M93.0392 36.1469C94.7505 36.1469 96.4269 36.531 97.754 37.3343V40.4775C96.6365 39.6742 95.0649 39.1853 93.4932 39.1853C90.7691 39.1853 88.045 40.6172 88.045 44.2493C88.045 47.7418 90.6993 49.3134 93.4583 49.3134C95.0998 49.3134 96.7063 48.8245 97.9287 48.126V51.3041C96.4618 52.0026 94.7855 52.3518 92.8646 52.3518C88.7784 52.3518 84.5875 49.8722 84.5875 44.389C84.5526 38.6265 88.9531 36.1469 93.0392 36.1469Z" fill="black"/>
                 <path d="M115.426 49.4881C115.775 49.4881 116.124 49.3834 116.439 49.3135V51.7582C115.81 52.0027 115.042 52.1424 114.273 52.1424C112.876 52.1424 111.759 51.5836 111.2 50.3612C109.698 51.5836 107.812 52.3519 105.402 52.3519C102.608 52.3519 100.024 50.8153 100.024 47.6371C100.024 43.6907 103.656 42.5032 106.869 42.5032C108.196 42.5032 109.663 42.6778 110.851 42.9572V42.3985C110.851 40.4776 109.454 39.1505 106.834 39.1505C104.564 39.1505 102.678 39.7093 101.316 40.3379V37.1947C102.539 36.7756 104.739 36.1819 107.184 36.1819C111.514 36.1819 114.273 38.2424 114.273 42.8874V48.3705C114.308 49.2087 114.832 49.4881 115.426 49.4881ZM103.586 47.3927C103.586 48.8944 104.913 49.6628 106.45 49.6628C108.092 49.6628 109.663 49.069 110.886 47.8467V45.2623C109.943 45.0876 108.65 44.8781 107.568 44.8781C105.612 44.8781 103.586 45.4718 103.586 47.3927Z" fill="black"/>
@@ -173,25 +173,28 @@
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__logo-barbershop">
-              <img src="img/logo-barbershop.svg" width="209" height="90" alt="logo-barbershop">
+            <a>
+              <img class="partners__logo-barbershop" src="img/logo-bar.png" width="209" height="90" alt="logo-barbershop">
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__logo-pink">
-              <img src="img/logo-pink.svg" width="182" height="52" alt="logo-pink">
+            <a>
+              <img class="partners__logo-pink" src="img/logo-pink.png" width="182" height="52" alt="logo-pink">
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__logo-mishka">
-              <img src="img/logo-mishka.svg" width="173" height="84" alt="logo-mishka">
+            <a>
+              <img class="partners__logo-mishka" src="img/logo-mis.png" width="173" height="84" alt="logo-mishka">
             </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
-      <img class="page-footer__map" src="img/map.jpg" width="1158" height="416" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
+      <!--<img class="page-footer__map" src="img/map.jpg" width="1158" height="416" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
+      <img class="page-footer__map-marker" src="img/map-marker.png" width="231" height="190" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
+      -->
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1158" height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <div class="page-footer__contacts">
         <p class="page-footer__slogan">NЁRDS DESIGN STUDIO</p>
         <p class="page-footer__contact">
@@ -257,5 +260,7 @@
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/modal-form.js"></script>
   </body>
 </html>
