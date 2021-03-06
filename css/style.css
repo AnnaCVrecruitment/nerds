@@ -138,7 +138,6 @@ img {
   margin: 0 auto;
   padding: 0;
   justify-content: space-between;
-  align-content: flex-start;
   z-index: 5;
 }
 
@@ -179,24 +178,29 @@ img {
 .site-navigation-current::after {
   content: "";
   position: absolute;
-  right:44px;
+  right: 44px;
   bottom: 0;
   left: 0px;
   height: 2px;
   background-color: var(--button-red);
+  z-index: 30;
 }
 
 /* User navigation */
 
-.user-navigation {
-  max-width: 120px;
-}
-
-.site-list a,
-.user-navigation a {
+.site-list a {
   color: var(--black);
   display: block;
   padding-right: 45px;
+}
+
+.site-list li:last-child {
+  padding-right: 0px;
+}
+
+.user-navigation a {
+  color: var(--black);
+  display: block;
 }
 
 .site-list a:hover,
@@ -211,22 +215,12 @@ img {
   opacity: 0.3;
 }
 
-.user-navigation .user-cart {
-  padding-left: 50px;
-  position: relative;
+.user-cart {
   z-index: 20;
-}
-
-.user-cart::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  top: 27px;
-  left: 24px;
+  padding: 0;
+  margin: 0;
+  padding-right: 20px;
+  padding-top: 5px;
 }
 
 
@@ -456,7 +450,7 @@ img {
 }
 
 .about-company__text {
-  margin-top: 30px;
+  margin-top: 35px;
   width: 646px;
   height: 49px;
   margin-bottom: 0;
@@ -475,7 +469,7 @@ img {
 
 .about-company__list {
   list-style: none;
-  padding-top: 0px;
+  padding-top: 5px;
   width: 399px;
   height: 120px;
 }
@@ -483,12 +477,8 @@ img {
 .about-company__item {
   padding: 0;
   margin: 0;
-  padding-top: 25px;
-}
-
-.about-company__item:first-child {
-  padding: 0;
-  padding-top: 10px;
+  padding-bottom: 23px;
+  padding-left: -50px;
 }
 
 .first-line {
@@ -499,7 +489,7 @@ img {
   content: "";
   position: absolute;
   left: -35px;
-  top: 20px;
+  top: 10px;
   width: 25px;
   height: 2px;
   background-color: var(--background-button);
@@ -517,8 +507,8 @@ img {
 .stats__slogan {
   color: var(--black);
   text-transform: uppercase;
-  padding-top: 30px;
-  padding-left: 20px;
+  padding-top: 35px;
+  padding-left: 15px;
   margin: 0;
 }
 
@@ -553,9 +543,7 @@ img {
 .partners {
  width: 1158px;
  margin: 0 auto;
- padding-top: 120px;
- padding-left: 170px;
- padding-right: 120px;
+ padding-top: 100px;
 }
 
 .partners__list {
@@ -579,10 +567,6 @@ img {
   box-shadow: 0 180px 0 0  var(--filter);
 }
 
-.partners__item {
-  padding-right: 50px;
-}
-
 .first-vertical-line {
   position: relative;
 }
@@ -599,17 +583,19 @@ img {
     596px 0 0 0  var(--filter);
 }
 
-.partners__item:first-child {
-  padding-right: 0px;
-  padding-left: 20px;
-}
-
 .partners__item:last-child:after {
   display: none;
 }
 
+.partners__item:first-child {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+
 .partners__logo-barbershop {
   opacity: 0.2;
+
 }
 
 .partners__logo-barbershop:focus,
@@ -623,6 +609,7 @@ img {
 
 .partners__logo-htmlacademy {
   opacity: 0.2;
+
 }
 
 .partners__logo-htmlacademy:focus,
@@ -636,6 +623,7 @@ img {
 
 .partners__logo-pink {
   opacity: 0.2;
+
 }
 
 .partners__logo-pink:focus,
@@ -649,6 +637,7 @@ img {
 
 .partners__logo-mishka {
   opacity: 0.2;
+
 }
 
 .partners__logo-mishka:focus,
@@ -659,6 +648,7 @@ img {
 .partners__logo-mishka:active {
   opacity: 0.1;
 }
+
 
 /*Footer*/
 
@@ -930,6 +920,7 @@ img {
   margin: auto;
   box-shadow: 0 20px 40px var(--modal-shadow);
   background-color: var(--white);
+  z-index: 50;
 }
 
 .modal-show {
